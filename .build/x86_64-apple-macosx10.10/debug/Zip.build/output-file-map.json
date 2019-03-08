@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/master.swiftdeps"
+  },
+  "/Users/billliu/Documents/workspace/Zip/Sources/Zip/QuickZip.swift": {
+    "dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.d",
+    "object": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.swift.o",
+    "swiftmodule": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip~partial.swiftmodule",
+    "swift-dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.swiftdeps"
+  },
+  "/Users/billliu/Documents/workspace/Zip/Sources/Zip/Zip.swift": {
+    "dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.d",
+    "object": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.swift.o",
+    "swiftmodule": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip~partial.swiftmodule",
+    "swift-dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.swiftdeps"
+  },
+  "/Users/billliu/Documents/workspace/Zip/Sources/Zip/ZipUtilities.swift": {
+    "dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.d",
+    "object": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.swift.o",
+    "swiftmodule": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.swiftdeps"
+  }
+}
