@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "24605f1e1b2cc6a4ea31bf120ea99650"
-build_time: [1552100832, 695263000]
-inputs:
-  "/Users/billliu/Documents/workspace/Zip/Sources/Zip/QuickZip.swift": [1552030690, 0]
-  "/Users/billliu/Documents/workspace/Zip/Sources/Zip/Zip.swift": [1552030690, 0]
-  "/Users/billliu/Documents/workspace/Zip/Sources/Zip/ZipUtilities.swift": [1552030690, 0]
