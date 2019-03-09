@@ -17,3 +17,20 @@ let package = Package(
 )
 ```
 
+
+
+## Quick functions
+
+The easiest way to use Zip is through quick functions. Both take local file paths as NSURLs, throw if an error is encountered and return an NSURL to the destination if successful.
+
+```swift
+do {
+    let filePath = Bundle.main.url(forResource: "file", withExtension: "zip")!
+    let unzipDirectory = try Zip.quickUnzipFile(filePath) // Unzip
+    let zipFilePath = try Zip.quickZipFiles([filePath], fileName: "archive") // Zip
+}
+catch {
+  print("Something went wrong")
+}
+```
+
