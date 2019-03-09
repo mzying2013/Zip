@@ -19,6 +19,12 @@ let package = Package(
 
 
 
+## Note
+
+If you want to generate and run an xcode project, you have to add `libz.tbd` in target of **minizip**.
+
+
+
 ## Quick functions
 
 The easiest way to use Zip is through quick functions. Both take local file paths as NSURLs, throw if an error is encountered and return an NSURL to the destination if successful.
