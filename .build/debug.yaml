@@ -2,13 +2,38 @@ client:
   name: swift-build
 tools: {}
 targets:
-  "main": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule","<Zip.module>"]
-  "test": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.xctest/Contents/MacOS/ZipPackageTests","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.swiftmodule","<Zip.module>","<ZipPackageTests.test>","<ZipTests.module>"]
+  "main": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o","<Zip.module>","<minizip.module>"]
+  "test": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.xctest/Contents/MacOS/ZipPackageTests","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.swiftmodule","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o","<Zip.module>","<ZipPackageTests.test>","<ZipTests.module>","<minizip.module>"]
   "Zip.module": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule","<Zip.module>"]
   "ZipPackageTests.test": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.xctest/Contents/MacOS/ZipPackageTests","<ZipPackageTests.test>"]
   "ZipTests.module": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.swiftmodule","<ZipTests.module>"]
+  "minizip.module": ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o","<minizip.module>"]
 default: "main"
 commands: 
+  "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o":
+    tool: clang
+    description: "Compile minizip ioapi.c"
+    inputs: ["/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/ioapi.c"]
+    outputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-target","x86_64-apple-macosx10.10","--sysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-arch","x86_64","-mmacosx-version-min=10.10","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fobjc-arc","-fblocks","-fmodules","-fmodule-name=minizip","-I","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include","-fmodules-cache-path=/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.d","-c","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/ioapi.c","-o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o"]
+    deps: "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.d"
+
+  "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o":
+    tool: clang
+    description: "Compile minizip unzip.c"
+    inputs: ["/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/unzip.c"]
+    outputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-target","x86_64-apple-macosx10.10","--sysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-arch","x86_64","-mmacosx-version-min=10.10","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fobjc-arc","-fblocks","-fmodules","-fmodule-name=minizip","-I","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include","-fmodules-cache-path=/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.d","-c","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/unzip.c","-o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o"]
+    deps: "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.d"
+
+  "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o":
+    tool: clang
+    description: "Compile minizip zip.c"
+    inputs: ["/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/zip.c"]
+    outputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-target","x86_64-apple-macosx10.10","--sysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-arch","x86_64","-mmacosx-version-min=10.10","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fobjc-arc","-fblocks","-fmodules","-fmodule-name=minizip","-I","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include","-fmodules-cache-path=/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.d","-c","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/zip.c","-o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o"]
+    deps: "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.d"
+
   "<C.Zip.module>":
     tool: phony
     inputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule"]
@@ -24,17 +49,22 @@ commands:
     inputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.swiftmodule"]
     outputs: ["<ZipTests.module>"]
 
+  "<C.minizip.module>":
+    tool: phony
+    inputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o"]
+    outputs: ["<minizip.module>"]
+
   "C.Zip.module":
     tool: swift-compiler
     executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     module-name: "Zip"
     module-output-path: "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule"
-    inputs: ["/Users/billliu/Documents/workspace/Zip/Sources/Zip/QuickZip.swift","/Users/billliu/Documents/workspace/Zip/Sources/Zip/Zip.swift","/Users/billliu/Documents/workspace/Zip/Sources/Zip/ZipUtilities.swift"]
+    inputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o","/Users/billliu/Documents/workspace/Zip/Sources/Zip/QuickZip.swift","/Users/billliu/Documents/workspace/Zip/Sources/Zip/Zip.swift","/Users/billliu/Documents/workspace/Zip/Sources/Zip/ZipUtilities.swift"]
     outputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.swiftmodule"]
     import-paths: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug"]
     temps-path: "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build"
     objects: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.swift.o"]
-    other-args: ["-swift-version","4.2","-enable-batch-mode","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
+    other-args: ["-swift-version","4.2","-enable-batch-mode","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include/module.modulemap","-I","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include","-module-cache-path","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
     sources: ["/Users/billliu/Documents/workspace/Zip/Sources/Zip/QuickZip.swift","/Users/billliu/Documents/workspace/Zip/Sources/Zip/Zip.swift","/Users/billliu/Documents/workspace/Zip/Sources/Zip/ZipUtilities.swift"]
     is-library: true
     enable-whole-module-optimization: false
@@ -43,7 +73,7 @@ commands:
   "C.ZipPackageTests.test":
     tool: shell
     description: "Linking ./.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.xctest/Contents/MacOS/ZipPackageTests"
-    inputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build/XCTestManifests.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build/ZipTests.swift.o"]
+    inputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/QuickZip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/Zip.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/Zip.build/ZipUtilities.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build/XCTestManifests.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build/ZipTests.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/ioapi.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/unzip.c.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/minizip.build/zip.c.o"]
     outputs: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.xctest/Contents/MacOS/ZipPackageTests"]
     args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug","-o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.xctest/Contents/MacOS/ZipPackageTests","-module-name","ZipPackageTests","-Xlinker","-bundle","@/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipPackageTests.product/Objects.LinkFileList"]
 
@@ -57,7 +87,7 @@ commands:
     import-paths: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug"]
     temps-path: "/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build"
     objects: ["/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build/XCTestManifests.swift.o","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ZipTests.build/ZipTests.swift.o"]
-    other-args: ["-swift-version","4.2","-enable-batch-mode","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
+    other-args: ["-swift-version","4.2","-enable-batch-mode","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include/module.modulemap","-I","/Users/billliu/Documents/workspace/Zip/Sources/Zip/minizip/include","-module-cache-path","/Users/billliu/Documents/workspace/Zip/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
     sources: ["/Users/billliu/Documents/workspace/Zip/Tests/ZipTests/XCTestManifests.swift","/Users/billliu/Documents/workspace/Zip/Tests/ZipTests/ZipTests.swift"]
     is-library: true
     enable-whole-module-optimization: false
